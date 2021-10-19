@@ -9,7 +9,7 @@
                             <!--Footer Column-->
                             <div class="footer-column col-xl-7 col-lg-6 col-md-6 col-sm-12">
                                 <div class="footer-widget about-widget">
-                                    <div class="logo"><a href="index"><img src="{{asset('asset/frontend/images/logo.png')}}" alt="" /></a></div>
+                                    <div class="logo"><a href="{{route('/')}}"><img src="{{asset('asset/frontend/images/logo.png')}}" alt="" /></a></div>
                                     <div class="text">
                                         <p>Dentist Elearning Dentist Elearning Dentist Elearning Dentist Elearning Dentist Elearning Dentist Elearning Dentist Elearning Dentist Elearning Dentist Elearning Dentist Elearning Dentist Elearning Dentist Elearning Dentist Elearning Dentist Elearning Dentist Elearning Dentist Elearning Dentist Elearning</p>           
                                     </div>
@@ -27,8 +27,8 @@
                                 <div class="footer-widget useful-links">
                                     <h2 class="widget-title">Useful Links</h2>
                                     <ul class="user-links">
-                                        <li><a href="index">Homepage</a></li>
-                                        <li><a href="aboutus">About Us</a></li>
+                                        <li><a href="{{route('/')}}">Homepage</a></li>
+                                        <li><a href="{{route('about-us')}}">About Us</a></li>
                                         <li><a href="services">Services</a></li>
                                         <li><a href="dashboard">Dashboard</a></li>
                                         <li><a href="blog">Latest News</a></li>

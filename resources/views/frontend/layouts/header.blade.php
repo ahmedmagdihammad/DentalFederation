@@ -35,7 +35,7 @@
         <div class="main-box">
             <div class="auto-container clearfix">
                 <div class="logo-box">
-                    <div class="logo"><a href="index"><img src="{{asset('asset/frontend/images/logo.png')}}" alt="" title=""></a></div>
+                    <div class="logo"><a href="{{route('/')}}"><img src="{{asset('asset/frontend/images/logo.png')}}" alt="" title=""></a></div>
                 </div>
                 
                 <!--Nav Box-->
@@ -53,11 +53,11 @@
 
                         <div class="collapse navbar-collapse clearfix" id="navbarSupportedContent">
                             <ul class="navigation clearfix">
-                                <li class="current"><a href="#">Homepage</a></li>
+                                <li class="current"><a href="{{route('/')}}">Homepage</a></li>
                                 <li><a href="#">Strategic Services</a></li>
                                 <li><a href="#">Accredetation</a></li>
                                 <li><a href="#">Medical News</a></li>
-                                <li><a href="#">About Us</a></li>
+                                <li><a href="{{route('about-us')}}">About Us</a></li>
                                 <!--<li><a href="#">Contact Us</a></li>-->
                             </ul>
                         </div>
@@ -73,7 +73,7 @@
 
                         <!-- Button Box -->
                         <div class="btn-box">
-                            <a href="{{route('login')}}" class="theme-btn btn-style-one"><span class="btn-title">Members Area</span></a>
+                            <a href="#" class="theme-btn btn-style-one"><span class="btn-title">Members Area</span></a>
                         </div>
                     </div>
                 </div>
