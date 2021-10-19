@@ -14,11 +14,12 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('frontend.home');
+        $pages = '';
+        return view('frontend.home', compact('pages'));
     }
 
     public function pages($pages)
     {
-        return view('frontend.'.$pages);
+        return view('frontend.'.$pages, compact('pages'));
     }
 }

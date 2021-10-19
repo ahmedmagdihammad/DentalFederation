@@ -79,23 +79,22 @@
                 <div class="content-column col-lg-6 col-md-12 col-sm-12">
                     <div class="inner-column">
                         <div class="sec-title">
-                            <span class="title">Our Doctors</span>
-                            <h2>The future relies on you<br>You can rely on us</h2>
+                            <!-- <span class="title">Our Doctors</span> -->
+                            <h2>Welcome to the Royal Australian Dental Federation!</h2>
                         </div>
                         <ul class="list-style-one">
-                            <li>Multiple Announcements during the course.</li>
-                            <li>Logo & company details on the WordCamp.</li>
-                            <li>Dedicated blog post thanking each Gold.</li>
-                            <li>Acknowledgment and opening and closing.</li>
+                            <li>
+                            The Federation is an honorary service organization whose mission is to support interdisciplinary relationships and cooperative education in the area of improving the public’s oral health and contemporary dental practice, providing a broad range of activities to enhance the professional development of both dentists and dental surgeons through assessments, achieving best practice and continued professional development.
+                            </li>
                         </ul>
-                        <div class="btn-box"><a href="register" class="theme-btn btn-style-three"><span class="btn-title">Register Now</span></a></div>
+                        <!-- <div class="btn-box"><a href="register" class="theme-btn btn-style-three"><span class="btn-title">Register Now</span></a></div> -->
                     </div>
                 </div>
 
                 <!-- Image Column -->
                 <div class="image-column col-lg-6 col-md-12 col-sm-12">
                     <div class="image-box">
-                        <figure class="image wow fadeIn"><img src="{{asset('asset/frontend/images/resource/about-img-1.jpg')}}" alt=""></figure>
+                        <figure class="image wow fadeIn"><img src="{{asset('asset/frontend/images/about-us/1.png')}}" alt=""></figure>
                     </div>
                 </div>
             </div>

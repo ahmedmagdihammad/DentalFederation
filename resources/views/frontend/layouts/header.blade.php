@@ -53,12 +53,12 @@
 
                         <div class="collapse navbar-collapse clearfix" id="navbarSupportedContent">
                             <ul class="navigation clearfix">
-                                <li class="current"><a href="{{route('/')}}">Homepage</a></li>
-                                <li><a href="{{route('pages', 'strategic-services')}}">Strategic Services</a></li>
-                                <li><a href="{{route('pages', 'sccredetation')}}">Accredetation</a></li>
-                                <li><a href="{{route('pages', 'medical-news')}}">Medical News</a></li>
-                                <li><a href="{{route('pages', 'about')}}">About Us</a></li>
-                                <!--<li><a href="{{route('pages', 'contact')}}">Contact Us</a></li>-->
+                                <li class="@if(Route::is('/')) current @endif"><a href="{{route('/')}}">Homepage</a></li>
+                                <li class="@if($pages == 'strategic') current @endif"><a href="{{route('pages', 'strategic')}}">Strategic Services</a></li>
+                                <li class="@if($pages == 'accredetation') current @endif"><a href="{{route('pages', 'accredetation')}}">Accredetation</a></li>
+                                <li class="@if($pages == 'medical-news') current @endif"><a href="{{route('pages', 'medical-news')}}">Medical News</a></li>
+                                <li class="@if($pages == 'about') current @endif"><a href="{{route('pages', 'about')}}">About Us</a></li>
+                                <!--<li class="@if($pages == 'contact') current @endif"><a href="{{route('pages', 'contact')}}">Contact Us</a></li>-->
                             </ul>
                         </div>
                     </nav>

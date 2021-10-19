@@ -29,9 +29,9 @@
                                     <ul class="user-links">
                                         <li><a href="{{route('/')}}">Homepage</a></li>
                                         <li><a href="{{route('pages', 'about')}}">About Us</a></li>
-                                        <li><a href="{{route('pages', 'Services')}}">Services</a></li>
+                                        <li><a href="{{route('pages', 'services')}}">Services</a></li>
                                         <li><a href="{{route('pages', 'dashboard')}}">Dashboard</a></li>
-                                        <li><a href="{{route('pages', 'latest News')}}">Latest News</a></li>
+                                        <li><a href="{{route('pages', 'latest-news')}}">Latest News</a></li>
                                         <li><a href="{{route('pages', 'contact')}}">Contact Us</a></li>
                                     </ul>
                                 </div>
