@@ -1,140 +1,18 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<title>Dental Federation</title>
-<!-- Stylesheets -->
-<link href="{{asset('assets/frontend/css/bootstrap.css')}}" rel="stylesheet">
-<link href="{{asset('assets/frontend/css/style.css')}}" rel="stylesheet">
-<link href="{{asset('assets/frontend/css/responsive.css')}}" rel="stylesheet">
+@extends('frontend.layouts.master')
 
-<link rel="shortcut icon" href="{{asset('assets/frontend/images/favicon.png')}}" type="image/x-icon">
-<link rel="icon" href="{{asset('assets/frontend/images/favicon.png')}}" type="image/x-icon">
+@section('title')
+    Dental Federation
+@endsection
 
-<!-- Responsive -->
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-
-<!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif]-->
-<!--[if lt IE 9]><script src="js/respond.js"></script><![endif]-->
-
-</head>
-
-<body>
-
-<div class="page-wrapper">
-    
-    <!-- Preloader -->
-    <div class="preloader"></div>
-    <!-- Header span -->
-
-    <!-- Main Header-->
-    <header class="main-header header-style-two alternate-two">
-
-        <!-- Header Top Two -->
-        <div class="header-top-two">
-            <div class="auto-container">
-                <div class="clearfix">
-                    
-                    <!--Top Left-->
-                    <div class="top-left clearfix">
-                        <ul class="links clearfix">
-                            <!--<li><a href="javascript:void(0)"><span class="icon fa fa-clock"></span>247 Customer Support</a></li>-->
-                            <li><a href="tel:+20123456789"><span class="icon fa fa-phone"></span>Call Us : <span dir="ltr">+20123456789</span></a></li>
-                            <li><a href="mailto:info@dentistelearning.com"><span class="icon fa fa-envelope"></span>info@dentistelearning.com</a></li>
-                        </ul>
-                    </div>
-                    
-                    <!--Top Right-->
-                    <div class="top-right clearfix">
-                        <ul class="social-icons">
-                            <li class="social-follow">Follow Us</li>
-                            <li><a href="#"><span class="fab fa-facebook-f"></span></a></li>
-                            <li><a href="#"><span class="fab fa-twitter"></span></a></li>
-                            <li><a href="#"><span class="fab fa-instagram"></span></a></li>
-                            <li><a href="#"><span class="fab fa-youtube"></span></a></li>
-                        </ul>
-                        
-                    </div>
-                    
-                </div>
-                
-            </div>
-        </div>
-        <!-- Header Top End -->
-
-        <div class="main-box">
-            <div class="auto-container clearfix">
-                <div class="logo-box">
-                    <div class="logo"><a href="index"><img src="{{asset('assets/frontend/images/logo.png')}}" alt="" title=""></a></div>
-                </div>
-                
-                <!--Nav Box-->
-                <div class="nav-outer clearfix">
-                    <!--Mobile Navigation Toggler-->
-                    <div class="mobile-nav-toggler"><span class="icon flaticon-menu"></span></div>
-                    <!-- Main Menu -->
-                    <nav class="main-menu navbar-expand-md navbar-light">
-                        <div class="navbar-header">
-                            <!-- Togg le Button -->      
-                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                                <span class="icon flaticon-menu-button"></span>
-                            </button>
-                        </div>
-
-                        <div class="collapse navbar-collapse clearfix" id="navbarSupportedContent">
-                            <ul class="navigation clearfix">
-                                <li class="current"><a href="#">Homepage</a></li>
-                                <li><a href="#">Strategic Services</a></li>
-                                <li><a href="#">Accredetation</a></li>
-                                <li><a href="#">Medical News</a></li>
-                                <li><a href="#">About Us</a></li>
-                                <!--<li><a href="#">Contact Us</a></li>-->
-                            </ul>
-                        </div>
-                    </nav>
-                    <!-- Main Menu End-->
-
-                    <!-- Outer box -->
-                    <div class="outer-box">
-                        <!--Search Box-->
-                        <!--<div class="search-box-outer">-->
-                        <!--    <div class="search-box-btn"><span class="flaticon-search"></span></div>-->
-                        <!--</div>-->
-
-                        <!-- Button Box -->
-                        <div class="btn-box">
-                            <a href="{{route('login')}}" class="theme-btn btn-style-one"><span class="btn-title">Members Area</span></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Mobile Menu  -->
-        <div class="mobile-menu">
-            <div class="menu-backdrop"></div>
-            <div class="close-btn"><span class="icon flaticon-cancel-1"></span></div>
-            
-            <!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header-->
-            <nav class="menu-box">
-                <div class="nav-logo"><a href="index"><img src="{{asset('assets/frontend/images/logo.png')}}" alt="" title=""></a></div>
-                
-                <ul class="navigation clearfix"><!--Keep This Empty / Menu will come through Javascript--></ul>
-            </nav>
-        </div><!-- End Mobile Menu -->
-
-    </header>
-    <!--End Main Header -->
-
+@section('content')
     <!-- Banner Section -->
     <section class="banner-section">
         <div class="banner-carousel owl-carousel owl-theme">
             <!-- Slide Item -->
-            <div class="slide-item" style="background-image: url({{asset('assets/frontend/images/main-slider/slide1.jpg')}});">
+            <div class="slide-item" style="background-image: url({{asset('asset/frontend/images/main-slider/slide1.jpg')}});">
                 <div class="auto-container">
                     <div class="content-box">
-                        <center><img src="{{asset('assets/frontend/images/catlogo.png')}}" style="max-width:250px;"></center>
+                        <center><img src="{{asset('asset/frontend/images/catlogo.png')}}" style="max-width:250px;"></center>
                         <h2>Dentist Elearning<br>Prime Performance</h2>
                         <div class="btn-box"><a href="register" class="theme-btn btn-style-two"><span class="btn-title">Join for free</span></a></div>
                     </div>  
@@ -142,10 +20,10 @@
             </div>
 
             <!-- Slide Item -->
-            <div class="slide-item" style="background-image: url({{asset('assets/frontend/images/main-slider/slide2.jpg')}});">
+            <div class="slide-item" style="background-image: url({{asset('asset/frontend/images/main-slider/slide2.jpg')}});">
                 <div class="auto-container">
                     <div class="content-box">
-                        <center><img src="{{asset('assets/frontend/images/catlogo.png')}}" style="max-width:250px;"></center>
+                        <center><img src="{{asset('asset/frontend/images/catlogo.png')}}" style="max-width:250px;"></center>
                         <h2>Dentist Elearning<br>Prime Performance</h2>
                         <div class="btn-box"><a href="register" class="theme-btn btn-style-two"><span class="btn-title">Join for free</span></a></div>
                     </div>  
@@ -153,10 +31,10 @@
             </div>
 
             <!-- Slide Item -->
-            <div class="slide-item" style="background-image: url({{asset('assets/frontend/images/main-slider/slide3.jpg')}});">
+            <div class="slide-item" style="background-image: url({{asset('asset/frontend/images/main-slider/slide3.jpg')}});">
                 <div class="auto-container">
                     <div class="content-box">
-                        <center><img src="{{asset('assets/frontend/images/catlogo.png')}}" style="max-width:250px;"></center>
+                        <center><img src="{{asset('asset/frontend/images/catlogo.png')}}" style="max-width:250px;"></center>
                         <h2>Dentist Elearning<br>Prime Performance</h2>
                         <div class="btn-box"><a href="register" class="theme-btn btn-style-two"><span class="btn-title">Join for free</span></a></div>
                     </div>  
@@ -164,10 +42,10 @@
             </div>
 
             <!-- Slide Item -->
-            <div class="slide-item" style="background-image: url({{asset('assets/frontend/images/main-slider/slide4.jpg')}});">
+            <div class="slide-item" style="background-image: url({{asset('asset/frontend/images/main-slider/slide4.jpg')}});">
                 <div class="auto-container">
                     <div class="content-box">
-                        <center><img src="{{asset('assets/frontend/images/catlogo.png')}}" style="max-width:250px;"></center>
+                        <center><img src="{{asset('asset/frontend/images/catlogo.png')}}" style="max-width:250px;"></center>
                         <h2>Dentist Elearning<br>Prime Performance</h2>
                         <div class="btn-box"><a href="register" class="theme-btn btn-style-two"><span class="btn-title">Join for free</span></a></div>
                     </div>  
@@ -217,7 +95,7 @@
                 <!-- Image Column -->
                 <div class="image-column col-lg-6 col-md-12 col-sm-12">
                     <div class="image-box">
-                        <figure class="image wow fadeIn"><img src="{{asset('assets/frontend/images/resource/about-img-1.jpg')}}" alt=""></figure>
+                        <figure class="image wow fadeIn"><img src="{{asset('asset/frontend/images/resource/about-img-1.jpg')}}" alt=""></figure>
                     </div>
                 </div>
             </div>
@@ -543,7 +421,7 @@
     <!--End Pricing Section -->
 
     <!-- Call to action -->
-    <section class="call-to-action" style="background-image: url({{asset('assets/frontend/images/background/callcenter.jpg')}});">
+    <section class="call-to-action" style="background-image: url({{asset('asset/frontend/images/background/callcenter.jpg')}});">
         <div class="auto-container">
             <div class="content-box">
                 <div class="text">Do you have any questions that need a clarification?</div>
@@ -580,7 +458,7 @@
                 </div>
                 <div class="image-column col-lg-6 col-md-12 col-sm-12">
                     <div class="image-box">
-                        <figure class="image"><img src="{{asset('assets/frontend/images/background/3.jpg')}}" alt=""></figure>
+                        <figure class="image"><img src="{{asset('asset/frontend/images/background/3.jpg')}}" alt=""></figure>
                     </div>
                 </div>
             </div>
@@ -605,22 +483,22 @@
     <!--            <div class="row">-->
                     <!-- Client Block -->
     <!--                <div class="client-block col-lg-3 col-md-6 col-sm-12">-->
-    <!--                    <figure class="image-box"><a href="#"><img src="{{asset('assets/frontend/images/clients/1.png')}}" alt=""></a></figure>-->
+    <!--                    <figure class="image-box"><a href="#"><img src="{{asset('asset/frontend/images/clients/1.png')}}" alt=""></a></figure>-->
     <!--                </div>-->
 
                     <!-- Client Block -->
     <!--                <div class="client-block col-lg-3 col-md-6 col-sm-12">-->
-    <!--                    <figure class="image-box"><a href="#"><img src="{{asset('assets/frontend/images/clients/2.png')}}" alt=""></a></figure>-->
+    <!--                    <figure class="image-box"><a href="#"><img src="{{asset('asset/frontend/images/clients/2.png')}}" alt=""></a></figure>-->
     <!--                </div>-->
 
                     <!-- Client Block -->
     <!--                <div class="client-block col-lg-3 col-md-6 col-sm-12">-->
-    <!--                    <figure class="image-box"><a href="#"><img src="{{asset('assets/frontend/images/clients/3.png')}}" alt=""></a></figure>-->
+    <!--                    <figure class="image-box"><a href="#"><img src="{{asset('asset/frontend/images/clients/3.png')}}" alt=""></a></figure>-->
     <!--                </div>-->
 
                     <!-- Client Block -->
     <!--                <div class="client-block col-lg-3 col-md-6 col-sm-12">-->
-    <!--                    <figure class="image-box"><a href="#"><img src="{{asset('assets/frontend/images/clients/4.png')}}" alt=""></a></figure>-->
+    <!--                    <figure class="image-box"><a href="#"><img src="{{asset('asset/frontend/images/clients/4.png')}}" alt=""></a></figure>-->
     <!--                </div>-->
     <!--            </div>-->
     <!--        </div>-->
@@ -631,22 +509,22 @@
     <!--            <div class="row">-->
                     <!-- Client Block -->
     <!--                <div class="client-block col-lg-3 col-md-6 col-sm-12">-->
-    <!--                    <figure class="image-box"><a href="#"><img src="{{asset('assets/frontend/images/clients/5.png')}}" alt=""></a></figure>-->
+    <!--                    <figure class="image-box"><a href="#"><img src="{{asset('asset/frontend/images/clients/5.png')}}" alt=""></a></figure>-->
     <!--                </div>-->
 
                     <!-- Client Block -->
     <!--                <div class="client-block col-lg-3 col-md-6 col-sm-12">-->
-    <!--                    <figure class="image-box"><a href="#"><img src="{{asset('assets/frontend/images/clients/6.png')}}" alt=""></a></figure>-->
+    <!--                    <figure class="image-box"><a href="#"><img src="{{asset('asset/frontend/images/clients/6.png')}}" alt=""></a></figure>-->
     <!--                </div>-->
 
                     <!-- Client Block -->
     <!--                <div class="client-block col-lg-3 col-md-6 col-sm-12">-->
-    <!--                    <figure class="image-box"><a href="#"><img src="{{asset('assets/frontend/images/clients/7.png')}}" alt=""></a></figure>-->
+    <!--                    <figure class="image-box"><a href="#"><img src="{{asset('asset/frontend/images/clients/7.png')}}" alt=""></a></figure>-->
     <!--                </div>-->
 
                     <!-- Client Block -->
     <!--                <div class="client-block col-lg-3 col-md-6 col-sm-12">-->
-    <!--                    <figure class="image-box"><a href="#"><img src="{{asset('assets/frontend/images/clients/8.png')}}" alt=""></a></figure>-->
+    <!--                    <figure class="image-box"><a href="#"><img src="{{asset('asset/frontend/images/clients/8.png')}}" alt=""></a></figure>-->
     <!--                </div>-->
     <!--            </div>-->
     <!--        </div>-->
@@ -657,22 +535,22 @@
     <!--            <div class="row">-->
                     <!-- Client Block -->
     <!--                <div class="client-block col-lg-3 col-md-6 col-sm-12">-->
-    <!--                    <figure class="image-box"><a href="#"><img src="{{asset('assets/frontend/images/clients/9.png')}}" alt=""></a></figure>-->
+    <!--                    <figure class="image-box"><a href="#"><img src="{{asset('asset/frontend/images/clients/9.png')}}" alt=""></a></figure>-->
     <!--                </div>-->
 
                     <!-- Client Block -->
     <!--                <div class="client-block col-lg-3 col-md-6 col-sm-12">-->
-    <!--                    <figure class="image-box"><a href="#"><img src="{{asset('assets/frontend/images/clients/10.png')}}" alt=""></a></figure>-->
+    <!--                    <figure class="image-box"><a href="#"><img src="{{asset('asset/frontend/images/clients/10.png')}}" alt=""></a></figure>-->
     <!--                </div>-->
 
                     <!-- Client Block -->
     <!--                <div class="client-block col-lg-3 col-md-6 col-sm-12">-->
-    <!--                    <figure class="image-box"><a href="#"><img src="{{asset('assets/frontend/images/clients/11.png')}}" alt=""></a></figure>-->
+    <!--                    <figure class="image-box"><a href="#"><img src="{{asset('asset/frontend/images/clients/11.png')}}" alt=""></a></figure>-->
     <!--                </div>-->
 
                     <!-- Client Block -->
     <!--                <div class="client-block col-lg-3 col-md-6 col-sm-12">-->
-    <!--                    <figure class="image-box"><a href="#"><img src="{{asset('assets/frontend/images/clients/12.png')}}" alt=""></a></figure>-->
+    <!--                    <figure class="image-box"><a href="#"><img src="{{asset('asset/frontend/images/clients/12.png')}}" alt=""></a></figure>-->
     <!--                </div>-->
     <!--            </div>-->
     <!--        </div>-->
@@ -754,7 +632,7 @@
                 <div class="news-block col-lg-4 col-md-6 col-sm-12 wow fadeInRight">
                     <div class="inner-box">
                         <div class="image-box">
-                            <figure class="image"><a href="#"><img src="{{asset('assets/frontend/images/resource/news-1.jpg')}}" alt=""></a></figure>
+                            <figure class="image"><a href="#"><img src="{{asset('asset/frontend/images/resource/news-1.jpg')}}" alt=""></a></figure>
                         </div>
                         <div class="lower-content">
                             <ul class="post-info">
@@ -771,7 +649,7 @@
                 <div class="news-block col-lg-4 col-md-6 col-sm-12 wow fadeInRight" data-wow-delay="400ms">
                     <div class="inner-box">
                         <div class="image-box">
-                            <figure class="image"><a href="#"><img src="{{asset('assets/frontend/images/resource/news-2.jpg')}}" alt=""></a></figure>
+                            <figure class="image"><a href="#"><img src="{{asset('asset/frontend/images/resource/news-2.jpg')}}" alt=""></a></figure>
                         </div>
                         <div class="lower-content">
                             <ul class="post-info">
@@ -788,7 +666,7 @@
                 <div class="news-block col-lg-4 col-md-6 col-sm-12 wow fadeInRight" data-wow-delay="800ms">
                     <div class="inner-box">
                         <div class="image-box">
-                            <figure class="image"><a href="#"><img src="{{asset('assets/frontend/images/resource/news-3.jpg')}}" alt=""></a></figure>
+                            <figure class="image"><a href="#"><img src="{{asset('asset/frontend/images/resource/news-3.jpg')}}" alt=""></a></figure>
                         </div>
                         <div class="lower-content">
                             <ul class="post-info">
@@ -804,163 +682,4 @@
         </div>
     </section>
     <!--End News Section -->
-
-    <!-- Main Footer -->
-    <footer class="main-footer">
-        <!--Widgets Section-->
-        <div class="widgets-section">
-            <div class="auto-container">
-                <div class="row">
-                    <!--Big Column-->
-                    <div class="big-column col-xl-6 col-lg-12 col-md-12 col-sm-12">
-                        <div class="row">
-                            <!--Footer Column-->
-                            <div class="footer-column col-xl-7 col-lg-6 col-md-6 col-sm-12">
-                                <div class="footer-widget about-widget">
-                                    <div class="logo"><a href="index"><img src="{{asset('assets/frontend/images/logo.png')}}" alt="" /></a></div>
-                                    <div class="text">
-                                        <p>Dentist Elearning Dentist Elearning Dentist Elearning Dentist Elearning Dentist Elearning Dentist Elearning Dentist Elearning Dentist Elearning Dentist Elearning Dentist Elearning Dentist Elearning Dentist Elearning Dentist Elearning Dentist Elearning Dentist Elearning Dentist Elearning Dentist Elearning</p>           
-                                    </div>
-                                    <ul class="social-icon-one social-icon-colored">
-                                        <li><a href="#"><i class="fab fa-youtube"></i></a></li>
-                                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-
-                            <!--Footer Column-->
-                            <div class="footer-column col-xl-5 col-lg-6 col-md-6 col-sm-12">
-                                <div class="footer-widget useful-links">
-                                    <h2 class="widget-title">Useful Links</h2>
-                                    <ul class="user-links">
-                                        <li><a href="index">Homepage</a></li>
-                                        <li><a href="aboutus">About Us</a></li>
-                                        <li><a href="services">Services</a></li>
-                                        <li><a href="dashboard">Dashboard</a></li>
-                                        <li><a href="blog">Latest News</a></li>
-                                        <li><a href="contact">Contact Us</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!--Big Column-->
-                    <div class="big-column col-xl-6 col-lg-12 col-md-12 col-sm-12">
-                        <div class="row">
-                            <!--Footer Column-->
-                            <div class="footer-column col-lg-6 col-md-6 col-sm-12">
-                                <!--Footer Column-->
-                                <div class="footer-widget contact-widget">
-                                    <h2 class="widget-title">Contact Us</h2>
-                                     <!--Footer Column-->
-                                    <div class="widget-content">
-                                        <ul class="contact-list">
-                                            <!--<li>-->
-                                            <!--    <span class="icon flaticon-clock"></span>-->
-                                            <!--    <div class="text">247 Customer Support</div>-->
-                                            <!--</li>-->
-
-                                            <li>
-                                                <span class="icon flaticon-phone"></span>
-                                                <div dir="ltr" class="text"><a href="tel:+20123456789">+20123456789</a></div>
-                                            </li>
-
-                                            <li>
-                                                <span class="icon flaticon-paper-plane"></span>
-                                                <div class="text"><a href="mailto:info@dentistelearning.com">info@dentistelearning.com</a></div>
-                                            </li>
-
-                                            <li>
-                                                <span class="icon flaticon-worldwide"></span>
-                                                <div class="text">1# Street name, City name<br>State name, Country name.</div>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!--Footer Column-->
-                            <div class="footer-column col-lg-6 col-md-6 col-sm-12">
-                                <!--Footer Column-->
-                                <div class="footer-widget instagram-widget">
-                                    <h2 class="widget-title">Our Gallery</h2>
-                                    <div class="widget-content">
-                                        <div class="outer clearfix">
-                                            <figure class="image"><a href="{{asset('assets/frontend/images/gallery/1.jpg')}}" class="lightbox-image" title="Image Title Here"><img src="{{asset('assets/frontend/images/resource/gw-1.jpg')}}" alt=""></a></figure>
-                                            <figure class="image"><a href="{{asset('assets/frontend/images/gallery/2.jpg')}}" class="lightbox-image" title="Image Title Here"><img src="{{asset('assets/frontend/images/resource/gw-2.jpg')}}" alt=""></a></figure>
-                                            <figure class="image"><a href="{{asset('assets/frontend/images/gallery/3.jpg')}}" class="lightbox-image" title="Image Title Here"><img src="{{asset('assets/frontend/images/resource/gw-3.jpg')}}" alt=""></a></figure>
-                                            <figure class="image"><a href="{{asset('assets/frontend/images/gallery/4.jpg')}}" class="lightbox-image" title="Image Title Here"><img src="{{asset('assets/frontend/images/resource/gw-4.jpg')}}" alt=""></a></figure>
-                                            <figure class="image"><a href="{{asset('assets/frontend/images/gallery/5.jpg')}}" class="lightbox-image" title="Image Title Here"><img src="{{asset('assets/frontend/images/resource/gw-5.jpg')}}" alt=""></a></figure>
-                                            <figure class="image"><a href="{{asset('assets/frontend/images/gallery/1.jpg')}}" class="lightbox-image" title="Image Title Here"><img src="{{asset('assets/frontend/images/resource/gw-6.jpg')}}" alt=""></a></figure>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!--Footer Bottom-->
-        <div class="footer-bottom">                    
-            <div class="auto-container">
-                <div class="inner-container clearfix">
-                    <div class="copyright-text">
-                        <p>All Rights Registered &reg; 2021 <a href="#">Dentist Elearning</a></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <!-- End Footer -->
-
-</div>
-<!--End pagewrapper-->
-
-<!--Search Popup-->
-<div id="search-popup" class="search-popup">
-    <div class="close-search theme-btn"><span class="fas fa-window-close"></span></div>
-    <div class="popup-inner">
-        <div class="overlay-layer"></div>
-        <div class="search-form">
-            <form method="post" action="search">
-                <div class="form-group">
-                    <fieldset>
-                        <input type="search" class="form-control" name="search-input" value="" placeholder="Search Here" required >
-                        <input type="submit" value="Search Now!" class="theme-btn">
-                    </fieldset>
-                </div>
-            </form>
-            
-            <br>
-            <h3>Recent Search Keywords</h3>
-            <ul class="recent-searches">
-                <li><a href="#">Medical</a></li>
-                <li><a href="#">Bussiness</a></li>
-                <li><a href="#">Courses</a></li>
-                <li><a href="#">Digital</a></li>
-                <li><a href="#">Conferance</a></li>
-            </ul>
-        
-        </div>
-        
-    </div>
-</div>
-
-<div class="scroll-to-top scroll-to-target" data-target="html"><span class="fa fa-angle-double-up"></span></div>
-<script src="{{asset('assets/frontend/js/jquery.js')}}"></script>
-<script src="{{asset('assets/frontend/js/popper.min.js')}}"></script>
-<script src="{{asset('assets/frontend/js/bootstrap.min.js')}}"></script>
-<script src="{{asset('assets/frontend/js/jquery-ui.js')}}"></script>
-<script src="{{asset('assets/frontend/js/jquery.fancybox.js')}}"></script>
-<script src="{{asset('assets/frontend/js/appear.js')}}"></script>
-<script src="{{asset('assets/frontend/js/owl.js')}}"></script>
-<script src="{{asset('assets/frontend/js/jquery.countdown.js')}}"></script>
-<script src="{{asset('assets/frontend/js/wow.js')}}"></script>
-<script src="{{asset('assets/frontend/js/script.js')}}"></script>
-</body>
-</html>
+@endsection
