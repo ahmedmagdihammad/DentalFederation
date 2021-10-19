@@ -15,7 +15,7 @@ use Illuminate\Support\Facades\Route;
 
 // Route Frontend
 Route::get('/', [App\Http\Controllers\Frontend\HomeController::class, 'index'])->name('/');
-Route::get('/about-us', [App\Http\Controllers\Frontend\HomeController::class, 'aboutUs'])->name('about-us');
+Route::get('/{pages}', [App\Http\Controllers\Frontend\HomeController::class, 'pages'])->name('pages');
 
 // Route Backend
 Auth::routes();

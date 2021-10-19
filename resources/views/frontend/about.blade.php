@@ -12,7 +12,9 @@
             <div class="slide-item" style="background-image: url({{asset('asset/frontend/images/main-slider/slide1.jpg')}});">
                 <div class="auto-container">
                     <div class="content-box">
-                        <center><img src="{{asset('asset/frontend/images/catlogo.png')}}" style="max-width:250px;"></center>
+                        <center>
+                            <div class="logo"><img src="{{asset('asset/frontend/images/logo.png')}}" alt="" style="max-width:250px;"/></div>
+                        </center>
                     </div>  
                 </div>
             </div>

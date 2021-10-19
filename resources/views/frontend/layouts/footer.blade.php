@@ -28,11 +28,11 @@
                                     <h2 class="widget-title">Useful Links</h2>
                                     <ul class="user-links">
                                         <li><a href="{{route('/')}}">Homepage</a></li>
-                                        <li><a href="{{route('about-us')}}">About Us</a></li>
-                                        <li><a href="services">Services</a></li>
-                                        <li><a href="dashboard">Dashboard</a></li>
-                                        <li><a href="blog">Latest News</a></li>
-                                        <li><a href="contact">Contact Us</a></li>
+                                        <li><a href="{{route('pages', 'about')}}">About Us</a></li>
+                                        <li><a href="{{route('pages', 'Services')}}">Services</a></li>
+                                        <li><a href="{{route('pages', 'dashboard')}}">Dashboard</a></li>
+                                        <li><a href="{{route('pages', 'latest News')}}">Latest News</a></li>
+                                        <li><a href="{{route('pages', 'contact')}}">Contact Us</a></li>
                                     </ul>
                                 </div>
                             </div>

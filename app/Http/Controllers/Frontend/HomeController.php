@@ -17,8 +17,8 @@ class HomeController extends Controller
         return view('frontend.home');
     }
 
-    public function aboutUs()
+    public function pages($pages)
     {
-        return view('frontend.aboutUs');
+        return view('frontend.'.$pages);
     }
 }
