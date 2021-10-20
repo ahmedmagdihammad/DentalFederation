@@ -19,7 +19,6 @@
                     <div class="content-box">
                         <center>
                             <h2>Strategic Services</h2>
-                            <!-- <div class="logo"><img src="{{asset('asset/frontend/images/logo.png')}}" alt="" style="max-width:250px;"/></div> -->
                         </center>
                     </div>  
                 </div>

@@ -14,7 +14,6 @@
     <section class="banner-section">
         <div class="banner-carousel owl-carousel owl-theme">
             <!-- Slide Item -->
-            <!-- <div class="slide-item" style="background-image: url({{asset('asset/frontend/images/main-slider/slide1.jpg')}});"> -->
             <div class="slide-item" style="background-image: url({{asset('asset/frontend/images/background/accreditation.png')}});padding: 201px 0 51px;">
                 <div class="auto-container">
                     <div class="content-box">
